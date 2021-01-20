@@ -8,32 +8,27 @@
 body{
   background: rgb(206, 206, 206);
 }
-.nav_bar {
+.navBar {
   background: #000000;
   padding-top: 10px;
   padding-bottom: 20px;
   width: 100%;
 }
 
-.nav_enlaces {
+.navEnlaces {
   display: flex;
   justify-content:flex-end;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
-.nav_enlaces a{
+.navEnlaces a{
   display: flex;
   text-decoration: none;  
   color: white;
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
 }
-
-
-/*.nav_enlaces:hover {
-background: grey;
-}*/
 
 .link1 {
   display: flex;
@@ -69,8 +64,6 @@ background: grey;
   background-color: rgba(63, 63, 63, 0.549);
 }
 
-
-/* Lista desplegable campeones -----> */
 
 .boton_desplegable {
   display: flex;
@@ -154,7 +147,7 @@ nav{
   height:100% ; 
 }
 
-.contenedor_principal {
+.contenedorPrincipal {
   display: flex;
   justify-content: center;
   background-color: black;
@@ -163,14 +156,14 @@ nav{
   padding-top: 30px;
 }
 
-.contenedor_video {
+.contenedorVideo {
   display: flex;
   justify-content: center;
   width:100%;
   height: 600px;
   
 }
-.video2 {
+.VideoPortada {
   width: 100%;
   height: 100%; 
 }
@@ -185,7 +178,7 @@ footer {
   
 }
 
-.redes_sociales {
+.redesSociales {
   display: flex;
   justify-content: center;
   right: 0;
@@ -220,7 +213,7 @@ footer {
 
 
 
-#contenedorCampeones {
+#contenedorContenedores {
 /*display: flex;*/
   justify-content: center;
   background-color: rgb(62, 13, 223);
@@ -236,7 +229,7 @@ footer {
 }
 
 
-#containerChampions{
+#contenedorCampeones{
  display: flex;
  justify-content: center;
  background-color: purple;
