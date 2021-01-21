@@ -6,18 +6,6 @@ export const example = () => {
 
 /*export const filterByType = (championsArray, type) => {
   return 'OMG';
-
-
-/*export const filterLuchadores = () => {
-  for (let i=0 ; i<dataArrayLol.length; i++) {
-    if(dataArrayLol[i].tags[1] =='Fighter' || dataArrayLol[i].tags[2]=='Fighter')}
-};*/
-
-
-/*const filterByType = (championsArray,type) => {
-  const filteredArray = championsArray.filter(champion => champion.tags.includes(type));
-return filteredArray;
- //myFunction(filteredArray);
 };*/
 
 import { filterByType } from './data.js';
@@ -56,8 +44,7 @@ function mostrarCampeones() {
 }
 
 
-
-/*function myFunction(filteredArray) {
+function myFunction(filteredArray) {
   let campeones = document.getElementById("contenedorCampeones");
   document.getElementById("contenedorCampeones").innerHTML = "";
   for (let i=0 ; i<filteredArray.length; i++) {
@@ -73,31 +60,30 @@ function mostrarCampeones() {
       </div>
       </div>`;
   }
-}*/
-
+}
 
 
 const botonTanques = document.getElementById("botonTanques");
 const tipoTanques = botonTanques.value;
-botonTanques.addEventListener("click", function(){filterByType(dataArrayLol,tipoTanques)});
+botonTanques.addEventListener("click", function(){myFunction(filterByType(dataArrayLol,tipoTanques))});
 
 const botonSoportes = document.getElementById("botonSoportes");
 const tiposupport = botonSoportes.value;
-botonSoportes.addEventListener("click", function(){filterByType(dataArrayLol,tiposupport)});
+botonSoportes.addEventListener("click", function(){myFunction(filterByType(dataArrayLol,tiposupport))});
 
 const botonAsesinos = document.getElementById("botonAsesinos");
 const tipoassassin = botonAsesinos.value;
-botonAsesinos.addEventListener("click", function(){filterByType(dataArrayLol,tipoassassin)});
+botonAsesinos.addEventListener("click", function(){myFunction(filterByType(dataArrayLol,tipoassassin))});
 
 const botonFighter = document.getElementById("botonFighter");
 const tipofighter = botonFighter.value;
-botonFighter.addEventListener("click", function(){filterByType(dataArrayLol,tipofighter)});
+botonFighter.addEventListener("click", function(){myFunction(filterByType(dataArrayLol,tipofighter))});
 
 const botonMagos = document.getElementById("botonMagos");
 const tipomage = botonMagos.value;
-botonMagos.addEventListener("click", function(){filterByType(dataArrayLol,tipomage)});
+botonMagos.addEventListener("click", function(){myFunction(filterByType(dataArrayLol,tipomage))});
 
 const botonTiradores = document.getElementById("botonTiradores");
 const tipotiradores = botonTiradores.value;
-botonTiradores.addEventListener("click", function(){filterByType(dataArrayLol,tipotiradores)});
+botonTiradores.addEventListener("click", function(){myFunction(filterByType(dataArrayLol,tipotiradores))});
 
